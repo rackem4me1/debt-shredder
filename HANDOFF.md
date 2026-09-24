@@ -16,45 +16,75 @@ Build a DebtShredder-inspired debt optimization application that:
 
 ## Current Phase
 
-Phase 1: Mathematical specification and financial engine architecture.
+Phase 2: Data schema and automated validation design.
 
 ## Completed
 
 - GitHub repository created
 - SPEC.md created
 - DECISIONS.md created
-- Gemini drafted SPEC.md Section 1 v2.0
-- ChatGPT completed two adversarial reviews
-- Seven final corrections were identified before freezing Section 1
+- HANDOFF.md created
+- Gemini drafted the mathematical architecture
+- ChatGPT completed multiple adversarial reviews
+- Claude reviewed implementation feasibility
+- Remaining architectural issues were resolved
+- SPEC.md Section 1 frozen at v2.4 on 2026-09-23
 
-## Current Blocking Item
+## Frozen Architecture
 
-Claude still needs to review ChatGPT's final seven corrections for implementation feasibility.
+SPEC.md Section 1 v2.4 is the authoritative mathematical and financial-engine specification.
 
-The schema and calculation engine are NOT final yet.
+Do not modify the frozen Section 1 during schema implementation unless a concrete implementation contradiction is discovered.
 
-## Next Steps
+If a contradiction is found:
+1. Document it.
+2. Stop implementation of the affected component.
+3. Review the proposed change before modifying SPEC.md.
 
-1. Send ChatGPT's final SPEC.md v2.0 review to Claude.
-2. Have Claude review implementation feasibility.
-3. Resolve any remaining disagreements.
-4. Update and freeze SPEC.md Section 1.
-5. Design the data schema.
-6. Review the schema.
-7. Build the first deterministic calculation engine.
-8. Create automated tests for interest, payment allocation, promotions, and cash-flow safety.
+## Current Development Task
 
-## Important Rules
+Claude should now design the data schema and initial automated tests that implement the frozen specification.
 
-- SPEC.md is the authoritative source of truth.
-- Do not preload Wayne's personal financial data into the application.
-- Do not make significant changes to financial logic without review.
-- LLMs may explain financial results but must not perform authoritative calculations inside the engine.
-- Actual lender terms, statements, and reconciled transactions override projections.
-- If lender rules are unknown, the software must label results as estimates rather than invent precision.
+Initial deliverables:
 
-## Immediate Resume Instruction
+1. `SCHEMA.py`
+   - Pydantic models
+   - Enumerations
+   - Validation rules
+   - Decimal-safe financial fields
+   - Account and balance-segment relationships
+   - Billing cycles
+   - Installment loan terms
+   - Payment lifecycle
+   - Liquidity accounts
+   - Sinking fund allocations
+   - Parameter provenance
 
-When development resumes:
+2. Initial pytest suite
+   - Schema validation
+   - Decimal precision protections
+   - Invalid balance/account relationships
+   - Promotional-term validation
+   - Billing-cycle validation
+   - Liquidity reserve validation
+   - Internal-transfer conservation
+   - Contract-term provenance requirements
 
-Send Claude ChatGPT's final seven-correction review and ask Claude to evaluate implementation feasibility before writing the final schema.
+## Important Implementation Notes
+
+- Transfer-eligible secondary accounts must respect actual transfer settlement timing.
+- Account-level liquidity floors must be represented in the schema because SPEC.md uses `Floor_A,min`.
+- Internal transfers must never be counted as external income or expense.
+- Reserved sinking-fund money must remain attached to the physical account holding it.
+- Unknown contractual terms must use explicit `ASSUMED_DEFAULT` provenance.
+- LLMs may explain results but must not perform authoritative financial arithmetic.
+
+## Next Review Gate
+
+Claude should produce the schema and test design first.
+
+ChatGPT will review the schema against frozen SPEC.md v2.4 before the calculation engine is implemented.
+
+Gemini may then review the schema for mathematical completeness.
+
+No production calculation engine should be considered stable until the schema and tests pass review.
