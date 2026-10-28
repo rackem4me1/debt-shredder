@@ -1,0 +1,33 @@
+# Private data, credentials and generated runtime files stay outside source control.
+# Private records and histories
+local_scenarios/
+**/local_scenarios/
+# Runtime and environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+*.log
+.DS_Store
+# Credentials: also scan the explicit file allowlist
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+client_secret*.json
+service-account*.json
+# Local downloads, screenshots, mirrors and migration artifacts
+*.zip
+Screenshot*.png
+Screenshot*.jpg
+sources/
+review_phase2/
+CODEX_HANDOFF_2026-10-28/
+SYNC_REVIEW_2026-10-28/

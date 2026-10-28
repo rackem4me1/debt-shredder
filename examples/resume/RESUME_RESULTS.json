@@ -1,0 +1,14 @@
+{
+  "example": "Synthetic checkpoint saved at promo cutoff, then resumed with a $50 payment.",
+  "saved_as_of": "2026-01-03",
+  "ending_balance": "56.07",
+  "matches_uninterrupted": true,
+  "promo_assessment_count": 1,
+  "decisions": [
+    {
+      "date": "2026-01-04",
+      "effective_apr": "0.1825",
+      "promo_exited": true
+    }
+  ]
+}

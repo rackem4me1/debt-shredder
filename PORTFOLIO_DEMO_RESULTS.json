@@ -1,0 +1,40 @@
+{
+  "example": "Synthetic zero-rate accounts; explicit minimum requests before extras; supplied cash events only.",
+  "decisions": [
+    {
+      "request_id": "extra-a",
+      "debt_account_id": "card-a",
+      "kind": "extra",
+      "requested": "500",
+      "accepted": "300.00",
+      "unmet": "200.00",
+      "reason": "cash_limit"
+    },
+    {
+      "request_id": "minimum-a",
+      "debt_account_id": "card-a",
+      "kind": "minimum",
+      "requested": "50",
+      "accepted": "50.00",
+      "unmet": "0.00",
+      "reason": "fully_funded"
+    },
+    {
+      "request_id": "minimum-b",
+      "debt_account_id": "card-b",
+      "kind": "minimum",
+      "requested": "50",
+      "accepted": "50.00",
+      "unmet": "0.00",
+      "reason": "fully_funded"
+    }
+  ],
+  "ending_checking": "100.00",
+  "debt_balances": {
+    "card-a": "150.00",
+    "card-b": "450.00"
+  },
+  "missed_minimum_account_ids": [],
+  "debt_horizon_end": "2026-01-21T00:00:00+00:00",
+  "cash_horizon_end": "2026-04-10T00:00:00+00:00"
+}
