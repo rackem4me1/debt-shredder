@@ -23,6 +23,7 @@ from dashboard.payment_edit import payment_form, change_payments, payment_previe
 from dashboard.multimonth import render_example as render_multimonth
 from dashboard.portfolio_forecast import render_example as render_portfolio_forecast
 from dashboard.library import render_library
+from dashboard.identity import application_identity
 from dashboard import my_money, bills, payday_cash, paycheck_week, payoff_view, payoff_repeat, payoff_runs, mixed_payoff_runs, payoff_setup, setup_plan, setup_plan_view, setup_backup, weekly_check, weekly_snapshots
 from dashboard.simple_view import saved_plan, walkthrough
 from dashboard.forecast_terms import terms_form, change_terms, terms_preview
@@ -35,8 +36,9 @@ MAX_FORM = 32 * 1024
 
 
 def make_server(directory: Path, port=8765):
-    directory = Path(directory)
+    directory = Path(directory).resolve()
     directory.mkdir(parents=True, exist_ok=True)
+    identity = application_identity(Path(__file__).resolve().parent.parent, directory)
     token = secrets.token_urlsafe(32)
     money_lock=Lock()
     bills_lock=Lock()
@@ -81,6 +83,9 @@ def make_server(directory: Path, port=8765):
             if not self.valid_host():
                 return self.reject('Open this app using its local address.',403)
             path=urlsplit(self.path).path
+            if path=='/app-identity':
+                import json
+                return self.send_html(json.dumps(identity), content_type='application/json; charset=utf-8')
             if path=='/weekly-checks':
                 if urlsplit(self.path).query:return self.reject('Open saved weekly comparisons without extra parameters.',400)
                 return self.send_html(weekly_snapshots.library(directory))

@@ -71,6 +71,8 @@ def allocate_payment(account: RevolvingAccount, amount: Decimal, minimum: Minimu
     amount = decimal_input(amount)
     if amount < 0 or amount % CENT:
         raise ValueError('posted payment must be nonnegative whole cents')
+    if any(request.amount % CENT for request in directed):
+        raise ValueError('directed payment amounts must be exact whole cents')
     if minimum.account_id != account.account_id:
         raise ValueError('minimum belongs to another account')
     if not account.calculation_ready:
