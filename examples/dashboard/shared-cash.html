@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shared cash example · Debt Shredder</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#172b41;background:#eef2f7;font-size:16px;line-height:1.5}
+*{box-sizing:border-box}body{margin:0}header{background:#122b46;color:white;padding:1.4rem max(1rem,calc((100vw - 1160px)/2))}
+header strong{font-size:1.3rem}main{max-width:1200px;margin:auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:2rem;margin:.3rem 0}h2{font-size:1.25rem;margin:0 0 1rem}p{margin:.6rem 0}
+.badge{display:inline-block;background:#d4e8fa;color:#173d65;border-radius:4px;padding:.2rem .6rem;font-size:.875rem}
+section{background:white;border:1px solid #cbd5e1;border-radius:8px;padding:1.3rem;margin:1.25rem 0}
+.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.95rem}
+th,td{text-align:left;padding:.8rem .6rem;border-bottom:1px solid #dae2ec;white-space:nowrap}
+th{font-weight:600;color:#36506b}.notice{border-left:4px solid #b06605;padding-left:1rem}.muted{color:#48617a}
+@media(max-width:600px){main{padding:1rem .75rem}section{padding:1rem}h1{font-size:1.6rem}}
+</style></head><body><header><strong>Debt Shredder</strong> · Local scenario</header><main>
+<span class="badge">Synthetic example · Estimate</span><h1>Shared cash example</h1>
+<p class="muted">Debt window: 2026-01-01T00:00:00+00:00 through 2026-01-21T00:00:00+00:00</p>
+<p class="notice">No missed minimum dates in the debt window. Supplied minimum requests: fully funded.
+This request status does not mean every required payment was supplied.</p>
+<section><h2>Cash after planned activity</h2><p class="muted">Through 2026-04-10T00:00:00+00:00 · healthy</p>
+<div class="scroll"><table><thead><tr><th>Account</th><th>Cleared</th><th>Floor</th><th>Reserved</th><th>Committed</th><th>Held</th><th>Above floor</th></tr></thead><tbody><tr><td>checking</td><td>$100.00</td><td>$100.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td><td>$0.00</td></tr></tbody></table></div></section>
+<section><h2>Payment requests</h2><p>Minimum requests reserve cash before extras. Each request uses its supplied initiation and credit dates.</p>
+<div class="scroll"><table><thead><tr><th>Request</th><th>Debt</th><th>Kind</th><th>Initiated</th><th>Credited</th><th>Requested</th><th>Accepted</th><th>Unfunded</th><th>Result</th></tr></thead><tbody><tr><td>extra-a</td><td>card-a</td><td>Extra</td><td>2026-01-02T00:00:00+00:00</td><td>2026-01-03T00:00:00+00:00</td><td>$500.00</td><td>$300.00</td><td>$200.00</td><td>Cash limit</td></tr><tr><td>minimum-a</td><td>card-a</td><td>Minimum</td><td>2026-01-10T00:00:00+00:00</td><td>2026-01-11T00:00:00+00:00</td><td>$50.00</td><td>$50.00</td><td>$0.00</td><td>Fully funded</td></tr><tr><td>minimum-b</td><td>card-b</td><td>Minimum</td><td>2026-01-10T00:00:00+00:00</td><td>2026-01-11T00:00:00+00:00</td><td>$50.00</td><td>$50.00</td><td>$0.00</td><td>Fully funded</td></tr></tbody></table></div></section>
+<section><h2>Debt at the end of the debt window</h2><div class="scroll"><table><thead><tr><th>Account</th><th>Posted balance</th><th>Unposted interest</th><th>Missed due dates</th></tr></thead><tbody><tr><td>card-a</td><td>$150.00</td><td>$0.00</td><td>None in this window</td></tr><tr><td>card-b</td><td>$450.00</td><td>$0.00</td><td>None in this window</td></tr></tbody></table></div></section>
+<p class="muted">This is a scenario, not an actual ledger or a payoff quote. Only supplied cash events and payment requests are included.
+Future minimum requests are not generated automatically. The cash window may extend beyond the debt window.
+Daily interest follows all credits on that day. No bank connection or payment execution is involved.</p>
+</main></body></html>

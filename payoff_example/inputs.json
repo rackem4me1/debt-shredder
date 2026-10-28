@@ -1,0 +1,929 @@
+{
+  "version": 1,
+  "start": "2026-01-01T00:00:00Z",
+  "end": "2026-12-31T00:00:00Z",
+  "debts": [
+    {
+      "account": {
+        "account_id": "high-rate",
+        "issuer": "Synthetic example",
+        "segments": [
+          {
+            "segment_id": "purchases",
+            "account_id": "high-rate",
+            "segment_type": "standard_purchase",
+            "balance": "1000",
+            "balance_provenance": "assumed_default",
+            "balance_as_of_date": null,
+            "apr": {
+              "value": "0.24",
+              "provenance": "assumed_default",
+              "confirmed_date": null
+            },
+            "compounding_method": {
+              "value": "simple_daily",
+              "provenance": "assumed_default",
+              "confirmed_date": null
+            },
+            "day_count_convention": {
+              "value": "actual_365_fixed",
+              "provenance": "assumed_default",
+              "confirmed_date": null
+            },
+            "accrued_unposted_interest": "0",
+            "accrued_interest_provenance": "assumed_default",
+            "accrued_interest_as_of_date": null,
+            "promo_expiration_date": null,
+            "post_promo_apr": null,
+            "post_promo_compounding_method": null,
+            "balance_transfer_fee": null,
+            "deferred_interest_to_date": "0",
+            "projected_deferred_interest_at_expiration": "0",
+            "deferred_interest_provenance": "assumed_default",
+            "deferred_interest_as_of_date": null,
+            "deferred_interest_apr": null,
+            "deferred_interest_calculation_method": null,
+            "disqualification_events": [],
+            "is_disqualified": false
+          }
+        ],
+        "allocation_rule": {
+          "account_id": "high-rate",
+          "minimum_payment_allocation_rule": {
+            "value": "lowest_apr_first",
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          },
+          "excess_payment_allocation_rule": {
+            "value": "statutory_default",
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          },
+          "minimum_rule_configuration": null,
+          "excess_rule_configuration": null,
+          "consumer_override_supported": {
+            "value": false,
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          },
+          "final_two_cycle_deferred_override_applies": {
+            "value": true,
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          }
+        },
+        "current_grace_state": "lost_grace",
+        "projected_grace_state": "pending",
+        "grace_applies_to_segment_types": [
+          "standard_purchase",
+          "promotional_true_zero",
+          "promotional_deferred_interest"
+        ],
+        "consecutive_statements_paid_in_full": 0,
+        "restoration_statements_required": {
+          "value": 2,
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "statement_close_day": 31,
+        "payment_due_day": 20,
+        "minimum_payment_floor": {
+          "value": "25",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "minimum_payment_rate": {
+          "value": "0.01",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "rounding_mode": {
+          "value": "ROUND_HALF_UP",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        }
+      },
+      "cycles": [
+        {
+          "cycle_id": "2025-12",
+          "account_id": "high-rate",
+          "start_date": "2025-12-01",
+          "end_date": "2025-12-31",
+          "statement_date": "2025-12-31",
+          "due_date": "2026-01-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-01",
+          "account_id": "high-rate",
+          "start_date": "2026-01-01",
+          "end_date": "2026-01-31",
+          "statement_date": "2026-01-31",
+          "due_date": "2026-02-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-02",
+          "account_id": "high-rate",
+          "start_date": "2026-02-01",
+          "end_date": "2026-02-28",
+          "statement_date": "2026-02-28",
+          "due_date": "2026-03-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-03",
+          "account_id": "high-rate",
+          "start_date": "2026-03-01",
+          "end_date": "2026-03-31",
+          "statement_date": "2026-03-31",
+          "due_date": "2026-04-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-04",
+          "account_id": "high-rate",
+          "start_date": "2026-04-01",
+          "end_date": "2026-04-30",
+          "statement_date": "2026-04-30",
+          "due_date": "2026-05-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-05",
+          "account_id": "high-rate",
+          "start_date": "2026-05-01",
+          "end_date": "2026-05-31",
+          "statement_date": "2026-05-31",
+          "due_date": "2026-06-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-06",
+          "account_id": "high-rate",
+          "start_date": "2026-06-01",
+          "end_date": "2026-06-30",
+          "statement_date": "2026-06-30",
+          "due_date": "2026-07-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-07",
+          "account_id": "high-rate",
+          "start_date": "2026-07-01",
+          "end_date": "2026-07-31",
+          "statement_date": "2026-07-31",
+          "due_date": "2026-08-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-08",
+          "account_id": "high-rate",
+          "start_date": "2026-08-01",
+          "end_date": "2026-08-31",
+          "statement_date": "2026-08-31",
+          "due_date": "2026-09-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-09",
+          "account_id": "high-rate",
+          "start_date": "2026-09-01",
+          "end_date": "2026-09-30",
+          "statement_date": "2026-09-30",
+          "due_date": "2026-10-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-10",
+          "account_id": "high-rate",
+          "start_date": "2026-10-01",
+          "end_date": "2026-10-31",
+          "statement_date": "2026-10-31",
+          "due_date": "2026-11-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-11",
+          "account_id": "high-rate",
+          "start_date": "2026-11-01",
+          "end_date": "2026-11-30",
+          "statement_date": "2026-11-30",
+          "due_date": "2026-12-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-12",
+          "account_id": "high-rate",
+          "start_date": "2026-12-01",
+          "end_date": "2026-12-31",
+          "statement_date": "2026-12-31",
+          "due_date": "2027-01-20",
+          "is_closed": false
+        }
+      ],
+      "initial_minimum": {
+        "account_id": "high-rate",
+        "billing_cycle_id": "2025-12",
+        "statement_minimum_original": "25",
+        "statement_minimum_remaining": "25",
+        "provenance": "assumed_default",
+        "as_of_date": null
+      },
+      "grace_terms": null,
+      "promo_transitions": [],
+      "credit_timezone": "UTC"
+    },
+    {
+      "account": {
+        "account_id": "small-balance",
+        "issuer": "Synthetic example",
+        "segments": [
+          {
+            "segment_id": "purchases",
+            "account_id": "small-balance",
+            "segment_type": "standard_purchase",
+            "balance": "500",
+            "balance_provenance": "assumed_default",
+            "balance_as_of_date": null,
+            "apr": {
+              "value": "0.12",
+              "provenance": "assumed_default",
+              "confirmed_date": null
+            },
+            "compounding_method": {
+              "value": "simple_daily",
+              "provenance": "assumed_default",
+              "confirmed_date": null
+            },
+            "day_count_convention": {
+              "value": "actual_365_fixed",
+              "provenance": "assumed_default",
+              "confirmed_date": null
+            },
+            "accrued_unposted_interest": "0",
+            "accrued_interest_provenance": "assumed_default",
+            "accrued_interest_as_of_date": null,
+            "promo_expiration_date": null,
+            "post_promo_apr": null,
+            "post_promo_compounding_method": null,
+            "balance_transfer_fee": null,
+            "deferred_interest_to_date": "0",
+            "projected_deferred_interest_at_expiration": "0",
+            "deferred_interest_provenance": "assumed_default",
+            "deferred_interest_as_of_date": null,
+            "deferred_interest_apr": null,
+            "deferred_interest_calculation_method": null,
+            "disqualification_events": [],
+            "is_disqualified": false
+          }
+        ],
+        "allocation_rule": {
+          "account_id": "small-balance",
+          "minimum_payment_allocation_rule": {
+            "value": "lowest_apr_first",
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          },
+          "excess_payment_allocation_rule": {
+            "value": "statutory_default",
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          },
+          "minimum_rule_configuration": null,
+          "excess_rule_configuration": null,
+          "consumer_override_supported": {
+            "value": false,
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          },
+          "final_two_cycle_deferred_override_applies": {
+            "value": true,
+            "provenance": "assumed_default",
+            "confirmed_date": null
+          }
+        },
+        "current_grace_state": "lost_grace",
+        "projected_grace_state": "pending",
+        "grace_applies_to_segment_types": [
+          "standard_purchase",
+          "promotional_true_zero",
+          "promotional_deferred_interest"
+        ],
+        "consecutive_statements_paid_in_full": 0,
+        "restoration_statements_required": {
+          "value": 2,
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "statement_close_day": 31,
+        "payment_due_day": 20,
+        "minimum_payment_floor": {
+          "value": "25",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "minimum_payment_rate": {
+          "value": "0.01",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "rounding_mode": {
+          "value": "ROUND_HALF_UP",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        }
+      },
+      "cycles": [
+        {
+          "cycle_id": "2025-12",
+          "account_id": "small-balance",
+          "start_date": "2025-12-01",
+          "end_date": "2025-12-31",
+          "statement_date": "2025-12-31",
+          "due_date": "2026-01-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-01",
+          "account_id": "small-balance",
+          "start_date": "2026-01-01",
+          "end_date": "2026-01-31",
+          "statement_date": "2026-01-31",
+          "due_date": "2026-02-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-02",
+          "account_id": "small-balance",
+          "start_date": "2026-02-01",
+          "end_date": "2026-02-28",
+          "statement_date": "2026-02-28",
+          "due_date": "2026-03-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-03",
+          "account_id": "small-balance",
+          "start_date": "2026-03-01",
+          "end_date": "2026-03-31",
+          "statement_date": "2026-03-31",
+          "due_date": "2026-04-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-04",
+          "account_id": "small-balance",
+          "start_date": "2026-04-01",
+          "end_date": "2026-04-30",
+          "statement_date": "2026-04-30",
+          "due_date": "2026-05-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-05",
+          "account_id": "small-balance",
+          "start_date": "2026-05-01",
+          "end_date": "2026-05-31",
+          "statement_date": "2026-05-31",
+          "due_date": "2026-06-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-06",
+          "account_id": "small-balance",
+          "start_date": "2026-06-01",
+          "end_date": "2026-06-30",
+          "statement_date": "2026-06-30",
+          "due_date": "2026-07-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-07",
+          "account_id": "small-balance",
+          "start_date": "2026-07-01",
+          "end_date": "2026-07-31",
+          "statement_date": "2026-07-31",
+          "due_date": "2026-08-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-08",
+          "account_id": "small-balance",
+          "start_date": "2026-08-01",
+          "end_date": "2026-08-31",
+          "statement_date": "2026-08-31",
+          "due_date": "2026-09-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-09",
+          "account_id": "small-balance",
+          "start_date": "2026-09-01",
+          "end_date": "2026-09-30",
+          "statement_date": "2026-09-30",
+          "due_date": "2026-10-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-10",
+          "account_id": "small-balance",
+          "start_date": "2026-10-01",
+          "end_date": "2026-10-31",
+          "statement_date": "2026-10-31",
+          "due_date": "2026-11-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-11",
+          "account_id": "small-balance",
+          "start_date": "2026-11-01",
+          "end_date": "2026-11-30",
+          "statement_date": "2026-11-30",
+          "due_date": "2026-12-20",
+          "is_closed": false
+        },
+        {
+          "cycle_id": "2026-12",
+          "account_id": "small-balance",
+          "start_date": "2026-12-01",
+          "end_date": "2026-12-31",
+          "statement_date": "2026-12-31",
+          "due_date": "2027-01-20",
+          "is_closed": false
+        }
+      ],
+      "initial_minimum": {
+        "account_id": "small-balance",
+        "billing_cycle_id": "2025-12",
+        "statement_minimum_original": "25",
+        "statement_minimum_remaining": "25",
+        "provenance": "assumed_default",
+        "as_of_date": null
+      },
+      "grace_terms": null,
+      "promo_transitions": [],
+      "credit_timezone": "UTC"
+    }
+  ],
+  "opening": {
+    "account_id": "checking",
+    "cleared": "400",
+    "reserved": "50",
+    "committed": "0",
+    "held": "0",
+    "floor": "100",
+    "primary": true,
+    "eligible": false,
+    "provenance": "assumed_default"
+  },
+  "cash_plans": [
+    {
+      "plan_id": "income-1",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-01-01T00:00:00Z",
+      "credited_at": "2026-01-01T00:00:00Z",
+      "debited_at": "2026-01-01T00:00:00Z",
+      "settled_at": "2026-01-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-1",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-01-02T00:00:00Z",
+      "credited_at": "2026-01-02T00:00:00Z",
+      "debited_at": "2026-01-02T00:00:00Z",
+      "settled_at": "2026-01-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-2",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-02-01T00:00:00Z",
+      "credited_at": "2026-02-01T00:00:00Z",
+      "debited_at": "2026-02-01T00:00:00Z",
+      "settled_at": "2026-02-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-2",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-02-02T00:00:00Z",
+      "credited_at": "2026-02-02T00:00:00Z",
+      "debited_at": "2026-02-02T00:00:00Z",
+      "settled_at": "2026-02-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-3",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-03-01T00:00:00Z",
+      "credited_at": "2026-03-01T00:00:00Z",
+      "debited_at": "2026-03-01T00:00:00Z",
+      "settled_at": "2026-03-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-3",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-03-02T00:00:00Z",
+      "credited_at": "2026-03-02T00:00:00Z",
+      "debited_at": "2026-03-02T00:00:00Z",
+      "settled_at": "2026-03-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-4",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-04-01T00:00:00Z",
+      "credited_at": "2026-04-01T00:00:00Z",
+      "debited_at": "2026-04-01T00:00:00Z",
+      "settled_at": "2026-04-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-4",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-04-02T00:00:00Z",
+      "credited_at": "2026-04-02T00:00:00Z",
+      "debited_at": "2026-04-02T00:00:00Z",
+      "settled_at": "2026-04-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-5",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-05-01T00:00:00Z",
+      "credited_at": "2026-05-01T00:00:00Z",
+      "debited_at": "2026-05-01T00:00:00Z",
+      "settled_at": "2026-05-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-5",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-05-02T00:00:00Z",
+      "credited_at": "2026-05-02T00:00:00Z",
+      "debited_at": "2026-05-02T00:00:00Z",
+      "settled_at": "2026-05-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-6",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-06-01T00:00:00Z",
+      "credited_at": "2026-06-01T00:00:00Z",
+      "debited_at": "2026-06-01T00:00:00Z",
+      "settled_at": "2026-06-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-6",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-06-02T00:00:00Z",
+      "credited_at": "2026-06-02T00:00:00Z",
+      "debited_at": "2026-06-02T00:00:00Z",
+      "settled_at": "2026-06-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-7",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-07-01T00:00:00Z",
+      "credited_at": "2026-07-01T00:00:00Z",
+      "debited_at": "2026-07-01T00:00:00Z",
+      "settled_at": "2026-07-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-7",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-07-02T00:00:00Z",
+      "credited_at": "2026-07-02T00:00:00Z",
+      "debited_at": "2026-07-02T00:00:00Z",
+      "settled_at": "2026-07-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-8",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-08-01T00:00:00Z",
+      "credited_at": "2026-08-01T00:00:00Z",
+      "debited_at": "2026-08-01T00:00:00Z",
+      "settled_at": "2026-08-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-8",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-08-02T00:00:00Z",
+      "credited_at": "2026-08-02T00:00:00Z",
+      "debited_at": "2026-08-02T00:00:00Z",
+      "settled_at": "2026-08-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-9",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-09-01T00:00:00Z",
+      "credited_at": "2026-09-01T00:00:00Z",
+      "debited_at": "2026-09-01T00:00:00Z",
+      "settled_at": "2026-09-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-9",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-09-02T00:00:00Z",
+      "credited_at": "2026-09-02T00:00:00Z",
+      "debited_at": "2026-09-02T00:00:00Z",
+      "settled_at": "2026-09-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-10",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-10-01T00:00:00Z",
+      "credited_at": "2026-10-01T00:00:00Z",
+      "debited_at": "2026-10-01T00:00:00Z",
+      "settled_at": "2026-10-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-10",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-10-02T00:00:00Z",
+      "credited_at": "2026-10-02T00:00:00Z",
+      "debited_at": "2026-10-02T00:00:00Z",
+      "settled_at": "2026-10-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-11",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-11-01T00:00:00Z",
+      "credited_at": "2026-11-01T00:00:00Z",
+      "debited_at": "2026-11-01T00:00:00Z",
+      "settled_at": "2026-11-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-11",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-11-02T00:00:00Z",
+      "credited_at": "2026-11-02T00:00:00Z",
+      "debited_at": "2026-11-02T00:00:00Z",
+      "settled_at": "2026-11-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-12",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2026-12-01T00:00:00Z",
+      "credited_at": "2026-12-01T00:00:00Z",
+      "debited_at": "2026-12-01T00:00:00Z",
+      "settled_at": "2026-12-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-12",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2026-12-02T00:00:00Z",
+      "credited_at": "2026-12-02T00:00:00Z",
+      "debited_at": "2026-12-02T00:00:00Z",
+      "settled_at": "2026-12-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-13",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2027-01-01T00:00:00Z",
+      "credited_at": "2027-01-01T00:00:00Z",
+      "debited_at": "2027-01-01T00:00:00Z",
+      "settled_at": "2027-01-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-13",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2027-01-02T00:00:00Z",
+      "credited_at": "2027-01-02T00:00:00Z",
+      "debited_at": "2027-01-02T00:00:00Z",
+      "settled_at": "2027-01-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-14",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2027-02-01T00:00:00Z",
+      "credited_at": "2027-02-01T00:00:00Z",
+      "debited_at": "2027-02-01T00:00:00Z",
+      "settled_at": "2027-02-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-14",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2027-02-02T00:00:00Z",
+      "credited_at": "2027-02-02T00:00:00Z",
+      "debited_at": "2027-02-02T00:00:00Z",
+      "settled_at": "2027-02-02T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "income-15",
+      "kind": "income",
+      "amount": "1200",
+      "source_account_id": null,
+      "destination_account_id": "checking",
+      "initiated_at": "2027-03-01T00:00:00Z",
+      "credited_at": "2027-03-01T00:00:00Z",
+      "debited_at": "2027-03-01T00:00:00Z",
+      "settled_at": "2027-03-01T00:00:00Z",
+      "provenance": "assumed_default"
+    },
+    {
+      "plan_id": "expense-15",
+      "kind": "expense",
+      "amount": "900",
+      "source_account_id": "checking",
+      "destination_account_id": null,
+      "initiated_at": "2027-03-02T00:00:00Z",
+      "credited_at": "2027-03-02T00:00:00Z",
+      "debited_at": "2027-03-02T00:00:00Z",
+      "settled_at": "2027-03-02T00:00:00Z",
+      "provenance": "assumed_default"
+    }
+  ],
+  "slots": [
+    {
+      "slot_id": "2026-01",
+      "initiated_at": "2026-01-20T00:00:00Z",
+      "credited_at": "2026-01-20T00:00:00Z",
+      "debited_at": "2026-01-20T00:00:00Z",
+      "settled_at": "2026-01-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-02",
+      "initiated_at": "2026-02-20T00:00:00Z",
+      "credited_at": "2026-02-20T00:00:00Z",
+      "debited_at": "2026-02-20T00:00:00Z",
+      "settled_at": "2026-02-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-03",
+      "initiated_at": "2026-03-20T00:00:00Z",
+      "credited_at": "2026-03-20T00:00:00Z",
+      "debited_at": "2026-03-20T00:00:00Z",
+      "settled_at": "2026-03-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-04",
+      "initiated_at": "2026-04-20T00:00:00Z",
+      "credited_at": "2026-04-20T00:00:00Z",
+      "debited_at": "2026-04-20T00:00:00Z",
+      "settled_at": "2026-04-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-05",
+      "initiated_at": "2026-05-20T00:00:00Z",
+      "credited_at": "2026-05-20T00:00:00Z",
+      "debited_at": "2026-05-20T00:00:00Z",
+      "settled_at": "2026-05-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-06",
+      "initiated_at": "2026-06-20T00:00:00Z",
+      "credited_at": "2026-06-20T00:00:00Z",
+      "debited_at": "2026-06-20T00:00:00Z",
+      "settled_at": "2026-06-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-07",
+      "initiated_at": "2026-07-20T00:00:00Z",
+      "credited_at": "2026-07-20T00:00:00Z",
+      "debited_at": "2026-07-20T00:00:00Z",
+      "settled_at": "2026-07-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-08",
+      "initiated_at": "2026-08-20T00:00:00Z",
+      "credited_at": "2026-08-20T00:00:00Z",
+      "debited_at": "2026-08-20T00:00:00Z",
+      "settled_at": "2026-08-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-09",
+      "initiated_at": "2026-09-20T00:00:00Z",
+      "credited_at": "2026-09-20T00:00:00Z",
+      "debited_at": "2026-09-20T00:00:00Z",
+      "settled_at": "2026-09-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-10",
+      "initiated_at": "2026-10-20T00:00:00Z",
+      "credited_at": "2026-10-20T00:00:00Z",
+      "debited_at": "2026-10-20T00:00:00Z",
+      "settled_at": "2026-10-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-11",
+      "initiated_at": "2026-11-20T00:00:00Z",
+      "credited_at": "2026-11-20T00:00:00Z",
+      "debited_at": "2026-11-20T00:00:00Z",
+      "settled_at": "2026-11-20T00:00:00Z"
+    },
+    {
+      "slot_id": "2026-12",
+      "initiated_at": "2026-12-20T00:00:00Z",
+      "credited_at": "2026-12-20T00:00:00Z",
+      "debited_at": "2026-12-20T00:00:00Z",
+      "settled_at": "2026-12-20T00:00:00Z"
+    }
+  ],
+  "payment_target": "250"
+}

@@ -1,0 +1,32 @@
+October28 fund support and saved comparisons:925 passed in107.12s full suite. Browser correction -> signed save -> reload verified; downloaded JSON/CSV values match. All48 original private JSON files unchanged. Frozen schema/spec and every engine module unchanged.
+
+October28 weekly system check:884 passed in104.28s full suite; final17 weekly-report smoke checks passed after home wording. Browser comparison, preserved private records and unchanged engine/schema/spec verified.
+
+October26 plan refresh:867 passed in103.81s full suite; final11 balance-form smoke checks passed in1.64s after links/copy polish. Browser update -> timing correction -> calculate -> signed save -> reload passed. Contract/planning and original financial records preserved. Engine/schema/spec unchanged.
+
+Complete setup recovery:839 passed in100.83s full suite. Browser signed preview/restore and exact input equivalence passed; original financial records, frozen schema/spec and engine modules unchanged.
+
+October25 balance-review update:47 focused wizard/planning tests passed in10.36s. Browser layout and saved-record hashes verified. No new full-suite run; prior819-test result below.
+
+Validation: 819 passed in100.09s full suite; final3 focused smoke checks passed in3.58s after plain-language copy adjustment. Browser wizard preview -> signed save -> reload verified. Production exact-input JSON replayed identically through CLI; both dated CSVs match. Original personal setup and legacy financial records unchanged by hash. All engine modules, SCHEMA.py and frozen specification unchanged. Final local server PID28089 on8765. Source-only checkpoint: Debt_Shredder_Wizard_to_Payoff_Batch.zip.
+
+Account wizard: 789 passed in91.79s full suite; final14 wizard checks passed in3.21s after optional bank APY and wording changes. Browser practice save/resume and bank/card/promo/loan questions verified. Existing private financial record hashes unchanged; every engine module and frozen reference unchanged.
+
+Latest full run (shared cards/loans, recurring transfers, immutable combined runs): 775 passed in89.78s. Python3.12.14 / Pydantic2.13.5 / pytest8.4.2. Browser target change, signed sample save and reload verified. Saved app input/summary/both CSVs exactly match headless replay; existing private snapshot hashes unchanged. Frozen schema/spec and underlying loan/cash/card replay byte-identical to the prior funding/loan checkpoint.
+
+Latest full run: 732 passed in78.08s. Final93 focused tests passed in28.58s after final reporting/funding guards and added under-interest case. Browser multi-account/loan examples verified; production exported inputs replayed through both standalone CLI paths.
+
+Latest: 705 passed in73.41s full suite. Browser repeat/save/reload verified. Production explicit-input AND template downloads replayed identically through CLI; CSV totals reconcile.
+
+Latest: 671 passed in56.57s full suite. Final14 payoff-view/simple-view tests passed after schedule display formatting. Browser payoff calculation and schedule verified.
+
+Latest: 660 passed in53.57s full suite; final19 payoff tests passed after last planner/CSV checks.
+
+Latest: 641 passed in 50.23s full suite. Received-paycheck guards and browser/HTTP checks passed.
+
+Python3.12.14 / Pydantic2.13.5 / pytest8.4.2
+635 passed in50.26s full suite.
+Final14 paycheck-week tests passed after settings-form wording clarification.
+Browser sample settings/save and final real week view verified.
+Private records/history/drafts/screenshots excluded from source checkpoint.
+Frozen schema/spec and all engine modules unchanged.

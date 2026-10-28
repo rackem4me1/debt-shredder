@@ -1,0 +1,93 @@
+{
+  "description": "Synthetic inputs; estimated outputs; explicit end-of-day cutoff and no post-exit grace.",
+  "unpaid_expected": "100 + 5.30 deferred assessment + 1.47 post-exit interest = 106.77",
+  "outcomes": {
+    "unpaid": {
+      "ending_posted_balance": "106.77",
+      "exit": {
+        "account_id": "demo",
+        "segment_id": "deferred",
+        "reason": "expiration",
+        "cutoff": "2026-01-03",
+        "reversion_starts": "2026-01-04",
+        "remaining_principal": "100",
+        "deferred_exposure": "5.300",
+        "assessed_deferred_interest": "5.30",
+        "waived_deferred_interest": "0",
+        "unassessed_deferred_exposure": "0",
+        "balance_after_assessment": "105.30",
+        "replacement_apr": {
+          "value": "0.1825",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "replacement_compounding": {
+          "value": "simple_daily",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "paid_by_cutoff": false,
+        "label": "estimate"
+      },
+      "posted_events": [
+        {
+          "on": "2026-01-03",
+          "kind": "promo_exit",
+          "amount": "5.30",
+          "detail": "deferred"
+        },
+        {
+          "on": "2026-01-31",
+          "kind": "interest_posting",
+          "amount": "1.47",
+          "detail": "deferred"
+        }
+      ],
+      "payments": []
+    },
+    "paid_on_cutoff": {
+      "ending_posted_balance": "0.00",
+      "exit": {
+        "account_id": "demo",
+        "segment_id": "deferred",
+        "reason": "expiration",
+        "cutoff": "2026-01-03",
+        "reversion_starts": "2026-01-04",
+        "remaining_principal": "0",
+        "deferred_exposure": "5.200",
+        "assessed_deferred_interest": "0",
+        "waived_deferred_interest": "5.200",
+        "unassessed_deferred_exposure": "0",
+        "balance_after_assessment": "0",
+        "replacement_apr": {
+          "value": "0.1825",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "replacement_compounding": {
+          "value": "simple_daily",
+          "provenance": "assumed_default",
+          "confirmed_date": null
+        },
+        "paid_by_cutoff": true,
+        "label": "estimate"
+      },
+      "posted_events": [
+        {
+          "on": "2026-01-03",
+          "kind": "promo_exit",
+          "amount": "0",
+          "detail": "deferred"
+        }
+      ],
+      "payments": [
+        {
+          "on": "2026-01-03",
+          "amount": "100",
+          "event_id": null,
+          "credited_at": null
+        }
+      ]
+    }
+  }
+}

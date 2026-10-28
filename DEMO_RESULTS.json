@@ -1,0 +1,355 @@
+{
+  "example": "Synthetic data; not a recommendation for a real account",
+  "liquidity": {
+    "start": "2026-01-02T12:00:00Z",
+    "end": "2026-04-02T12:00:00Z",
+    "safe_immediate_payment": "650",
+    "status": "healthy",
+    "first_breach_at": null,
+    "peak_shortfall": "0",
+    "points": [
+      {
+        "at": "2026-01-02T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "1000",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "1000",
+            "above_floor": "900"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1500",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "300",
+            "above_floor": "300"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "2500",
+        "accessible_above_floors": "900",
+        "status": "healthy",
+        "trigger_ids": []
+      },
+      {
+        "at": "2026-01-03T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "1000",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "1000",
+            "above_floor": "900"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "300",
+        "aggregate_cash": "2500",
+        "accessible_above_floors": "900",
+        "status": "healthy",
+        "trigger_ids": [
+          "savings-transfer"
+        ]
+      },
+      {
+        "at": "2026-01-04T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "1300",
+            "committed": "0",
+            "held": "300",
+            "reserved": "0",
+            "unrestricted": "1000",
+            "above_floor": "900"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "2500",
+        "accessible_above_floors": "900",
+        "status": "healthy",
+        "trigger_ids": [
+          "savings-transfer"
+        ]
+      },
+      {
+        "at": "2026-01-05T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "1300",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "1300",
+            "above_floor": "1200"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "2500",
+        "accessible_above_floors": "1200",
+        "status": "healthy",
+        "trigger_ids": [
+          "savings-transfer"
+        ]
+      },
+      {
+        "at": "2026-01-07T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "950",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "950",
+            "above_floor": "850"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "2150",
+        "accessible_above_floors": "850",
+        "status": "healthy",
+        "trigger_ids": [
+          "bill-1"
+        ]
+      },
+      {
+        "at": "2026-01-16T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "1750",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "1750",
+            "above_floor": "1650"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "2950",
+        "accessible_above_floors": "1650",
+        "status": "healthy",
+        "trigger_ids": [
+          "paycheck"
+        ]
+      },
+      {
+        "at": "2026-02-01T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "750",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "750",
+            "above_floor": "650"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "1950",
+        "accessible_above_floors": "650",
+        "status": "healthy",
+        "trigger_ids": [
+          "bill-2"
+        ]
+      },
+      {
+        "at": "2026-04-02T12:00:00Z",
+        "positions": [
+          {
+            "account_id": "checking",
+            "cleared": "750",
+            "committed": "0",
+            "held": "0",
+            "reserved": "0",
+            "unrestricted": "750",
+            "above_floor": "650"
+          },
+          {
+            "account_id": "savings",
+            "cleared": "1200",
+            "committed": "0",
+            "held": "0",
+            "reserved": "1200",
+            "unrestricted": "0",
+            "above_floor": "0"
+          }
+        ],
+        "in_transit": "0",
+        "aggregate_cash": "1950",
+        "accessible_above_floors": "650",
+        "status": "healthy",
+        "trigger_ids": []
+      }
+    ],
+    "audit": [
+      {
+        "at": "2026-01-03T12:00:00Z",
+        "plan_id": "savings-transfer",
+        "stage": "init",
+        "kind": "transfer",
+        "amount": "300",
+        "source_account_id": "savings",
+        "destination_account_id": "checking"
+      },
+      {
+        "at": "2026-01-03T12:00:00Z",
+        "plan_id": "savings-transfer",
+        "stage": "debit",
+        "kind": "transfer",
+        "amount": "300",
+        "source_account_id": "savings",
+        "destination_account_id": "checking"
+      },
+      {
+        "at": "2026-01-04T12:00:00Z",
+        "plan_id": "savings-transfer",
+        "stage": "credit",
+        "kind": "transfer",
+        "amount": "300",
+        "source_account_id": "savings",
+        "destination_account_id": "checking"
+      },
+      {
+        "at": "2026-01-05T12:00:00Z",
+        "plan_id": "savings-transfer",
+        "stage": "settle",
+        "kind": "transfer",
+        "amount": "300",
+        "source_account_id": "savings",
+        "destination_account_id": "checking"
+      },
+      {
+        "at": "2026-01-07T12:00:00Z",
+        "plan_id": "bill-1",
+        "stage": "atomic",
+        "kind": "expense",
+        "amount": "350",
+        "source_account_id": "checking",
+        "destination_account_id": null
+      },
+      {
+        "at": "2026-01-16T12:00:00Z",
+        "plan_id": "paycheck",
+        "stage": "atomic",
+        "kind": "income",
+        "amount": "800",
+        "source_account_id": null,
+        "destination_account_id": "checking"
+      },
+      {
+        "at": "2026-02-01T12:00:00Z",
+        "plan_id": "bill-2",
+        "stage": "atomic",
+        "kind": "expense",
+        "amount": "1000",
+        "source_account_id": "checking",
+        "destination_account_id": null
+      }
+    ],
+    "external_income": "800",
+    "external_outflows": "1350",
+    "label": "estimate"
+  },
+  "payment_allocation": {
+    "requested": "125",
+    "applied": "125",
+    "unapplied": "0",
+    "minimum_remaining": "0",
+    "lines": [
+      {
+        "segment_id": "lower",
+        "amount": "25",
+        "phase": "minimum"
+      },
+      {
+        "segment_id": "higher",
+        "amount": "100",
+        "phase": "excess"
+      }
+    ],
+    "remaining_balances": [
+      {
+        "segment_id": "higher",
+        "amount": "100"
+      },
+      {
+        "segment_id": "lower",
+        "amount": "75"
+      }
+    ],
+    "label": "estimate"
+  },
+  "candidate_search": {
+    "candidate": "110.00",
+    "feasible": true,
+    "remaining": "0",
+    "method": "bounded_bisection",
+    "evaluations": 17,
+    "minimum_certified": true
+  },
+  "unposted_interest": "10.19178082191780821917808220"
+}
